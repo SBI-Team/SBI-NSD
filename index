@@ -1,0 +1,185 @@
+#!/bin/bash
+clear
+a='\033[31;1m'
+b='\033[32;1m'
+c='\033[33;1m'
+d='\033[34;1m'
+e='\033[35;1m'
+f='\033[36;1m'
+g='\033[37;1m'
+
+trap ctrl_c INT
+ctrl_c(){
+clear
+echo -e "$a[$g!$a]$g CTRL+C Terdeteksi"
+sleep 0.5
+echo -e "$a[$g!$a]$g Password untuk keluar"
+echo -e "$a[$g!$a]$g Jika salah akan error"
+read -p "Password : " pw
+if [ $pw = ShaDoW ]
+then
+sleep 1
+echo -e "$d[$g+$d]$g Terima kasih telah menggunakan tools SBI-NSD"
+exit
+else
+echo -e "$a[$g!$a]$g Maaf password salah"
+sleep 3
+while [ true ]
+do
+echo -e "\033[41;1mShaDoW BlooD InDoNeSiA || Error : 404 Not found || BOOM !!"
+sleep 0.000000000000000000000000000000000000000000000000000000000000000000001
+echo -e "\033[44;1mWe Always Together Because of Family || Error :404 Not found"
+sleep 0.000000000000000000000000000000000000000000000000000000000000000000001
+done
+fi
+}
+
+echo -e "$d Author :$g <[SBI_01]"
+echo -e "$d Tools  :$g Nyuri Script Deface"
+echo -e "$d Team   :$g ShaDoW BlooD InDoNeSiA"
+sleep 0.7
+echo -e "     ____ $d  ____________________$g
+    |    |$d  \   _______________/\ $g
+    |    |$d   \  \_______|  |__\  \ $g
+    |    |$d    \_________|  |_ /\  \ $g
+____|    |____$d _________|__/ /  \  \ $g
+\  $d  ____$g    /$d/_____________/    \  \ $g
+ \ $d  \  /$g   /   $d        |  |      | | $g
+  \ $d  \/$g   /      $d    |\|  |_____/  / $g
+   \      /         $d  |____________/ $g
+    \    /
+     \  /
+      \/"
+sleep 0.5
+echo ""
+echo -e " $d[\033[37;1m01$d]$g Mulai"
+echo -e " $d[\033[37;1m02$d]$g Help"
+echo -e " $d[\033[37;1m03$d]$g Info Tools"
+echo -e " $d[\033[37;1m04$d]$g Keluar"
+read -p " [Pilihan]=>> " pilihan
+
+if [ $pilihan = 01 ] || [ $pilihan = 1 ]
+then
+echo ''
+echo -e " Jika$d tidak$g paham silhakan cek di Help"
+read -p " Link Website : " link
+read -p " Nama Script di Web : " nama
+echo -e " Apakah benar kalau$d $link/$nama"
+echo -e "$g Adalah link lengkap Website??"
+read -p " [Y/N]=>> " plh
+
+if [ $plh = Y ] || [ $plh = y ]
+then
+echo -e " Terima kasih telah memilih benar"
+sleep 1
+echo -e " $d[$g#$d]$g Proses Nyuri..."
+wget $link/$nama
+echo -e " $d[$g#$d]$g Selesai"
+sleep 1
+read -p " New Name Script : " nmb
+read -p " Penyimpanan : " pny
+mv $nama $nmb
+mv $nmb $pny
+sleep 1
+echo -e " $d[$g#$d]$g Clear"
+echo -e " Cek di$d $pny"
+sleep 1
+echo -e ""
+echo -e "$g Keluar??"
+read -p " [Y/N]=>> " out
+echo -e " Terima kasih telah menggunakan tools SBI-NSD"
+sleep 3
+fi
+
+if [ $plh = N ] || [ $plh = n ]
+then
+echo -e " Terima kasih telah memilih salah/tidak benar"
+sleep 1
+echo -e ""
+echo -e " Keluar??"
+read -p " [Y/N]=>> " out
+echo -e " Terima kasih telah menggunakan tools SBI-NSD"
+sleep 3
+fi
+fi
+
+if [ $pilihan = 02 ] || [ $pilihan = 2 ]
+then
+echo -e ""
+sleep 0.5
+echo -e " $d-$g>$d NDS$g merupakan singkatan dari$d Nyuri Script Deface"
+echo -e "$g    Tools ini juga bisa untuk download file apa saja"
+echo -e "$d    Enter$g untuk lanjut"
+read enter
+sleep 0.5
+echo -e " $d-$g>$d Link Website$g merupakan link target"
+echo -e "    yang ingin diambil scriptnya"
+echo -e " $d   Contoh :$g apparelworld.org"
+echo -e "$d    Enter$g untuk lanjut"
+read enter
+sleep 0.5
+echo -e " $d-$g>$d Nama script di Web$g merupakan nama"
+echo -e "    script yang ingin dicuri"
+echo -e " $d   Contoh :$g index.html"
+echo -e "$d    Enter$g untuk lanjut"
+read enter
+sleep 0.5
+echo -e " $d-$g>$d New Name Script$g merupakan nama baru script"
+echo -e "    yang ingin dipakai"
+echo -e " $d   Contoh :$g SBI.html"
+echo -e "$d    Enter$g untuk lanjut"
+read enter
+sleep 0.5
+echo -e " $d-$g>$d Penyimpanan$g merupakan tempat menyimpan"
+echo -e "    script deface hasil curian"
+echo -e "$d    Contoh :$g /sdcard"
+echo -e "$d    Enter$g untuk lanjut"
+read enter
+sleep 0.5
+echo -e " Terima kasih telah membaca Help"
+sleep 5
+bash index
+fi
+
+if [ $pilihan = 03 ] || [ $pilihan = 3 ]
+then
+echo -e "$d Author   :$g <[SBI_01]"
+sleep 0.5
+echo -e "$d Name     :$g SBI-NSD"
+sleep 0.5
+echo -e "$d Team     :$g ShaDoW BlooD InDoNeSiA"
+sleep 0.5
+echo -e "$d GitHub   :$g https://github.com/SBI-Team/SBI-NSD"
+sleep 0.5
+echo -e "$d Date     :$g 12 April 2019"
+sleep 0.5
+echo -e "$d Version  :$g 1.0"
+sleep 0.5
+echo -e "$d Kegunaan : $g-$d>$g Nyuri Script Deface yang tertanam di Web"
+echo -e "            $g-$d>$g Download file apa saja yang tertanam di Web"
+sleep 0.5
+echo -e " Terima kasih telah membaca Info Tools"
+echo -e " Silahkan tekan$d Enter"
+read enter
+bash index
+fi
+
+if [ $pilihan = 04 ] || [ $pilihan = 4 ]
+then
+echo -e " Yakin ingin$d keluar$g??"
+read -p " [Y/N]=>> " out
+echo -e " Terima kasih telah menggunakan tools SBI-NSD"
+sleep 3
+fi
+
+if [ $out = Y ] || [ $out = y ]
+then
+exit
+fi
+
+if [ $out = N ] || [ $out = n ]
+then
+echo -e " Selamat datang kembali"
+sleep 2
+bash index
+fi
