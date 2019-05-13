@@ -34,7 +34,7 @@ done
 fi
 }
 
-echo -e "$d Author :$g <[SBI_01]"
+echo -e "$d Author :$g ᗛ[SBI_B4n9Z4tt3r5]"
 echo -e "$d Tools  :$g Nyuri Script Deface"
 echo -e "$d Team   :$g ShaDoW BlooD InDoNeSiA"
 sleep 0.7
@@ -143,7 +143,7 @@ fi
 
 if [ $pilihan = 03 ] || [ $pilihan = 3 ]
 then
-echo -e "$d Author   :$g <[SBI_01]"
+echo -e "$d Author   :$g ᗛ[SBI_B4n9Z4tt3r5]"
 sleep 0.5
 echo -e "$d Name     :$g SBI-NSD"
 sleep 0.5
